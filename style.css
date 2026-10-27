@@ -1,0 +1,15 @@
+:root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; color: #252b25; background: #f6f5f1; }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 44px 24px 28px; background: radial-gradient(ellipse at 50% 20%, #fff 0, #f6f5f1 65%); }
+.entry { width: min(100%, 420px); text-align: center; margin: auto 0; }
+.mark { border-radius: 30px; box-shadow: 0 12px 40px #283a2512; }
+.eyebrow { margin: 30px 0 12px; color: #78806d; font-size: 10px; letter-spacing: 3px; font-weight: 700; }
+h1 { margin: 0; font-size: clamp(27px, 6vw, 34px); letter-spacing: -1px; line-height: 1.4; }
+.intro { color: #73796e; line-height: 1.9; font-size: 15px; margin: 18px 0 28px; }
+.status { min-height: 24px; color: #73796e; font-size: 13px; line-height: 1.8; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 48px; margin-top: 8px; padding: 12px 26px; border: 0; border-radius: 13px; background: #344b35; color: #fff; font: inherit; font-size: 14px; text-decoration: none; cursor: pointer; transition: background .18s, transform .18s; }
+.button:hover { background: #243c26; transform: translateY(-1px); }
+.button:focus-visible { outline: 3px solid #9bac87; outline-offset: 4px; }
+[hidden] { display: none !important; }
+footer { margin-top: 52px; text-align: center; color: #959b90; font-size: 11px; line-height: 1.8; }
+@media (prefers-reduced-motion: reduce) { .button { transition: none; } }
