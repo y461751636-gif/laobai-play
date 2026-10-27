@@ -15,7 +15,9 @@ async function connect() {
       signal: AbortSignal.timeout(12000),
     });
     if (!response.ok) throw new Error('endpoint unavailable');
-    const href = destination(readEndpoint(await response.json()), location.search, location.hash);
+    const search = new URLSearchParams(location.search);
+    if (document.body.dataset.path) search.set('path', document.body.dataset.path);
+    const href = destination(readEndpoint(await response.json()), search.toString(), location.hash);
     enter.href = href;
     enter.hidden = false;
     status.textContent = '已找到入口，正在前往…';

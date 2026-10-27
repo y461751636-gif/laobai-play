@@ -26,7 +26,7 @@ jobs:
       - name: 准备页面
         run: |
           mkdir /tmp/site
-          cp index.html style.css entry.mjs route.mjs endpoint.json laobai-share.png laobai-64.png .nojekyll /tmp/site/
+          cp index.html youyou-island.html style.css entry.mjs route.mjs endpoint.json laobai-share.png laobai-64.png youyou-island-share-20261027.jpg .nojekyll /tmp/site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: /tmp/site
